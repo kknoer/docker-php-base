@@ -1,8 +1,14 @@
 # Docker PHP Base
 
-## Machine Management
+## Setup
+
+Setup project config:
+
+* Swap `{db_name}` for your projects database name in the `docker-composer.yml` file.
 
 Build the machine: `docker-compose up --build`
+
+## Machine Management
 
 Start the machine: `docker-compose start`
 
