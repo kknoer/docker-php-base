@@ -1,29 +1,21 @@
 # Docker PHP Base
 
-Build the machine:
+## Machine Management
 
-`docker-compose up --build`
+Build the machine: `docker-compose up --build`
 
-Start the machine:
+Start the machine: `docker-compose start`
 
-`docker-compose start`
+Stop the machine: `docker-compose stop`
 
-Stop the machine:
+SSH into the machine: `docker exec -it {project_dir_name}_1 /bin/bash`
 
-`docker-compose stop`
+## Laravel Specific
 
-SSH into the machine:
+Run migrations: `docker-compose exec app php artisan migrate`
 
-`docker exec -it speckit_app_1 /bin/bash`
+Re-build database and seed (all data removed): `docker-compose exec app php artisan migrate:fresh --seed`
 
-Run migrations:
+## View App
 
-`docker-compose exec app php artisan migrate`
-
-Re-build database and seed (all data removed):
-
-`docker-compose exec app php artisan migrate:fresh --seed`
-
-View app in browser:
-
-http://localhost:8080
+Visit: http://localhost:8080
