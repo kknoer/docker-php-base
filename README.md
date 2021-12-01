@@ -25,3 +25,9 @@ Re-build database and seed (all data removed): `docker-compose exec app php arti
 ## View App
 
 Visit: http://localhost:8080
+
+## TODO
+
+    - [ ] Add support for custom domains
+    - [ ] Add support for SSL
+    - [ ] Add support for Apache
